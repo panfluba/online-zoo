@@ -6,6 +6,7 @@
 - tg: @lubo0ow
 - [GitHub](https://github.com/panfluba/)
 - [LinkedIn](https://www.linkedin.com/in/lyubov-panfilova-55068b243/)
+
 ---
 
 # Information:
