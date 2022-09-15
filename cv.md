@@ -1,11 +1,11 @@
 # Panfilova Lyubov
 ---
 
-email: panfluba@gmail.com
-discord: .lusia#5956
-tg: @lubo0ow
-[GitHub](https://github.com/panfluba/)
-[LinkedIn](https://www.linkedin.com/in/lyubov-panfilova-55068b243/)
+- email: panfluba@gmail.com
+- discord: .lusia#5956
+- tg: @lubo0ow
+- [GitHub](https://github.com/panfluba/)
+- [LinkedIn](https://www.linkedin.com/in/lyubov-panfilova-55068b243/)
 ---
 
 # Information:
@@ -17,6 +17,7 @@ I'm 18 and I am sophomore of Belarusian State University of Informatics and Radi
 - HTML 
 - CSS 
 - GitHub 
+
 ---
 # Examples of code: 
 
