@@ -1,1 +1,332 @@
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+
+ body{
+    background-color: #E5E5E5;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: black;
+    overflow-x: hidden; /* скрывает все элементы, которые не попадают в область*/
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+ }
+
+ /* -------------------------- H E A D E R ----------------------------- */
+
+header{
+    z-index: 11;
+    background-color: #000;
+    font-weight: 500;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+
+}
+
+ #header_inner_container{
+    color: #fff;
+    display: grid;
+    grid-template-columns: 0.6fr 4fr 1fr;
+    align-items: center;
+    min-width: 1160px;
+    max-width: 1600px;
+    height: 80px;
+ }
+
+ nav{
+    display: flex;
+    flex-direction: row;
+ }
+
+ nav span{
+    padding: 0 29px;
+    
+ }
+
+ #designed{
+    display: flex;
+    justify-content: end;
+ }
+
+#logo_container{
+    position: relative;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    width: 82px;
+    font-size: 19.0145px;
+    line-height: 120%;
+}
+#logo{
+    text-align: center;
+}
+
+ #navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+header img{
+    position: absolute;
+    /* margin: 0 auto; */
+    left: 9px;
+    top: 20px;
+    height: 21px;
+}
+/* -------------------------- M A I N ----------------------------- */
+.main_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#topic1{
+    display: flex;
+    flex-direction: row;
+    background-image: url(/assets/images/GiantPanda.png);
+    height: 780px;
+    background-size: 100%;
+    object-fit: contain; /* заполнение картинкой блока */
+    background-repeat: no-repeat;
+}
+
+.elementsOfMain{
+    font-weight: 700;
+    font-size: 106.5px;
+    line-height: 79.87px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#orangeCircle{
+    position: absolute;
+    z-index: 9;
+    width: 465px;
+    height: 465px;
+    border-radius: 100%;
+
+    /* left: calc(50% - 500.31px/2 + 330.15px);  */
+    margin-top: 92px;
+    margin-right: calc(50% + 222.5px);
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+#watchYourFavAnimal{
+    
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    left: 82px;
+    top: 73px;
+}
+
+#fav{
+    color: #FFEE2E;
+}
+
+.orangeButton{
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    border-style: none;
+    width: 298px;
+    height: 54px;
+    text-transform: uppercase;
+}
+
+#watchOnline{
+    position: absolute;
+    left: 180px;
+    top: 626px;
+    
+}
+
+/* ----------------------- T O P I C 2 ----------------------------- */
+
+#topic2{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 1829px; /* 1369px */
+    background-size: 100%;
+    justify-content: start;
+    position: relative;
  
+}
+
+#subtopic2_1{
+    margin-top: 140px;
+    align-self: center;
+    max-width: 1160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 180px;
+}
+
+#subtopic2_2{
+    display: grid;
+    grid-template-columns: 82px 1fr 82px;
+    max-width: 1324px;
+}
+
+.imgCollage{
+    width: 366px;
+    border-radius: 5px;
+}
+
+.collage{
+    margin: 0 auto 20px; 
+    /* padding-bottom: 60px; */
+    border: solid 1px orange;
+    border-radius: 5px;
+}
+
+#album{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#anglePictures{
+    height: 1829px;
+    margin: 140px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    background-size: 100%;
+    width: 100%;
+    justify-content: start;
+    position: absolute;
+}
+
+#anglePictures img{
+    position: absolute;
+}
+
+#pic1{
+    right: 0;
+    top: 12px;
+}
+
+#pic2{
+    left:0;
+    bottom: 0;
+}
+
+#pic3{
+    right: 0%;
+    bottom: 0;
+}
+
+.choose_your_favorite{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.topic2_ellipce_buttoms{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+#buttonArrowLeft, #buttonArrowRigth{
+    height: 62px;
+    width: 62px;
+    border-radius: 100%;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-style: none;
+    color: #fff;
+}
+
+.text{
+    margin-left:87px;
+    color: #333B41;
+    font-family: 'Roboto';
+}
+
+h2{
+font-weight: 400;
+font-size: 48px;
+line-height: 120%;
+margin-bottom: 20px;
+}
+
+#text1{
+    line-height: 130%;
+    margin-bottom: 54px;
+}
+
+#text2{
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+#text3{
+    line-height: 140%;
+}
+
+/* --------------------------------- T O P I C 3 ------------------------------------------ */
+
+#topic3{
+    display: flex;
+    flex-direction: column;
+    height: 1004px;
+    width: 100%;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%); opacity: 0.9; 
+}
+
+#whiteFrame{
+    max-width: 1160px;
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    height: 835px;
+    margin: 69px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.orangeText{
+    text-align: center;
+    margin: 41px auto 30px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FE9013 !important;
+}
+
+#topic3 p{
+    color: #333B41;
+}
+
+#t3t1{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+#t3t2{}
+#t3t3{}
+#t3t4{}
