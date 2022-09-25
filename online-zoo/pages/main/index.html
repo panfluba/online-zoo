@@ -16,12 +16,12 @@
 <body>
    <header>
        <div id="header_inner_container">
-           <div id="logo_container">
-               <span id="logo">PetStory <br> online</span>
+           <div class="logo_container">
+               <span class="logo">PetStory <br> online</span>
                <img src="/assets/icons/bamboo.png" alt="bamboo">
            </div>
            <nav>
-                <div id="navContainer">
+                <div class="navContainer">
                     <span>About</span>
                     <span>Map</span>
                     <span>Zoos</span>
@@ -82,43 +82,74 @@
                         <div class="collage">
                             <img src="/assets/images/panda.png" alt="" class="imgCollage">
                             <div class="inCollage">
-                                 <img src="" alt="">
-                                 <span></span>
-                             </div>
+                                <div class="inCollageText">
+                                    <p class="animals">Giant pandas</p>
+                                    <p>Native to Southwest China</p>
+                                </div>
+                                <div class="iconInCollage">
+                                    <img src="/assets/icons/bananabamboo.svg" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="collage">
                             <img src="/assets/images/eagle.png" alt="" class="imgCollage">
                             <div class="inCollage">
-                                 <img src="" alt="">
-                                 <span></span>
+                                <div class="inCollageText">
+                                    <p class="animals">Eagles</p>
+                                    <p>Native to South America</p>
+                                </div>
+                                <div class="iconInCollage">
+                                    <img src="/assets/icons/meet-fish_icon.svg" alt="">
+                                </div>
                              </div>
                         </div>
                         <div class="collage">
                             <img src="/assets/images/gorilla.png" alt="" class="imgCollage">
                             <div class="inCollage">
-                                 <img src="/assets/icons/banana.png" alt="">
-                                 <span></span>
+                                <div class="inCollageText">
+                                    <p class="animals">Gorillas</p>
+                                    <p>Native to Congo</p>
+                                </div>
+                                <div class="iconInCollage">
+                                    <img src="/assets/icons/bananabamboo.svg" alt="">  
+                                </div>      
                              </div>
                         </div>
                         <div class="collage">
                             <img src="/assets/images/sloth.png" alt="" class="imgCollage">
                             <div class="inCollage">
-                                 <img src="" alt="">
-                                 <span></span>
+                                <div class="inCollageText">
+                                    <p class="animals">Two-toed sloth</p>
+                                    <p>Mesoamerica, South America</p>
+                                </div>
+                                <div class="iconInCollage">
+                                    <img src="/assets/icons/bananabamboo.svg" alt="">  
+                                </div>                              
                              </div>
                         </div>
                         <div class="collage">
                             <img src="/assets/images/cheetah.png" alt="" class="imgCollage">
                             <div class="inCollage">
-                                 <img src="" alt="">
-                                 <span></span>
+                                <div class="inCollageText">
+                                    <p class="animals">Cheetahs</p>
+                                    <p>Native to Africa</p>
+                                </div>
+                                <div class="iconInCollage">
+                                    <img src="/assets/icons/meet-fish_icon.svg" alt="">
+                                </div>
                              </div>
                         </div>
                         <div class="collage">
                             <img src="/assets/images/penguin.png" alt="" class="imgCollage">
                             <div class="inCollage">
-                                 <img src="" alt="">
-                                 <span></span>
+                                <div class="inCollageText">
+                                    <p class="animals">Penguins</p>
+                                    <p>Native to Antarctica</p>
+                                </div>
+                                <div class="iconInCollage">
+                                    <img src="/assets/icons/meet-fish_icon.svg" alt="">  
+                                </div>
+                               
                              </div>
                         </div>
                     </div>
@@ -137,28 +168,41 @@
 
        <div class="main_content" id="topic3">
            <div id="whiteFrame">
-               <p class="orangeText">Pick and feed a friend</p>
-               <p id="t3t1">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
-               <p id="t3t2">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
-               <p id="t3t3">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our Emergency Support Fund . </p>
-
+                <div id="t3p_margin_l">
+                    <p class="orangeText">Pick and feed a friend</p>
+                    <p id="t3t1">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+                    <p id="t3t2">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
+                    <p id="t3t3">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider<br> a gift to our Emergency Support Fund . </p>     
+                </div>
+              
                <div id="scheme">
-                   <p id="t3t4">How it works</p>
+                   <h3>How it works</h3>
                    <div id="partOfScheme">
-                       <div class="schemePicture">
-                           <img src="" alt="">
-                           <span>Pay with card</span>
-                       </div>
-                       <div class="schemeArrow"></div>
-                       <div class="schemePicture">
-                           <img src="" alt="">
-                           <span>Payment goes to the zoo</span>
-                       </div>
-                       <div class="schemeArrow"></div>
-                       <div class="schemePicture">
-                           <img src="" alt="">
-                           <span>Your favourite animal gets delicious dish</span>
-                       </div>
+                        <div class="scheme_column">
+                            <div class="schemePicture">
+                                <img src="/assets/icons/sc1.svg" alt="">
+                               
+                            </div>
+                            <span>Pay with card</span>
+                        </div>
+                        <div class="schemeArrow">
+                            <img src="/assets/icons/sc_arrow.svg" alt="">
+                        </div>
+                        <div class="scheme_column">
+                            <div class="schemePicture">
+                                <img src="/assets/icons/sc3.png" alt="">
+                            </div>
+                            <span>Payment goes to the zoo</span>
+                        </div>
+                        <div class="schemeArrow">
+                            <img src="/assets/icons/sc_arrow.svg" alt="">
+                        </div>
+                        <div class="scheme_column">
+                            <div class="schemePicture">
+                                <img src="/assets/icons/sc3.svg" alt="">
+                            </div>
+                            <span>Your favourite animal gets delicious dish</span>
+                        </div>
                    </div>
                </div>
                <button class="orangeButton">FEED A FRIEND NOW</button>
@@ -166,54 +210,63 @@
            </div>
        </div>
 
-       <div class="main_content" id="topic4">
-           <span>Testimonials</span>
-           <div class="testi_container">
-               <img src="" alt="">
-               <img src="" alt="">
-               <img src="" alt="">
-               <img src="" alt="">
+       <div class="main_content">
+           <div id="leav_foto">
+                <img src="/assets/icons/leav_foto.svg" alt="" id="pic4">
            </div>
-           <div id="lineScrol">
-               <div id="orangeScrol"></div>
-               <div id="greyScrol"></div>
+           <div id="topic4">
+                <h3>Testimonials</h3>
+                <div class="testi_container">
+                    <img src="/assets/images/testimonials1.svg" alt="">
+                    <img src="/assets/images/testimonials2.svg" alt="">
+                    <img src="/assets/images/testimonials3.svg" alt="">
+                    <img src="/assets/images/testimonials4.svg" alt="">
+                </div>
+                <div id="lineScrol">
+                    <div id="greyScrol">
+                        <div id="orangeScrol"></div>
+                    </div>
+                </div>
+                <button class="notCircleAngleButton">LEAVE FEEDBACK</button>
            </div>
-           <button class="notCircleAngleButton">LEAVE FEEDBACK</button>
        </div>
    </main>
 
    <footer>
        <div id="footerThreeColumn">
            <div id="firstColumn">
-               <img src="" alt="PetStoryLogo">
-               <button class="notCircleAngleButton"></button>
+                <div class="logo_container">
+                    <span class="logo">PetStory <br> online</span>
+                    <img src="/assets/icons/bamboo.png" alt="bamboo">
+                </div>
+               <button class="notCircleAngleButton">donate for volunteers</button>
                <div id="socialLinks">
-                   <div><img src="" alt=""><span></span></div>
-                   <div><img src="" alt=""><span></span></div>
-                   <div><img src="" alt=""><span></span></div>
-                   <div><img src="" alt=""><span></span></div>
+                   <div class="iconsAndText"><img src="/assets/icons/facebook.png" alt=""><span>Facebook</span></div>
+                   <div class="iconsAndText"><img src="/assets/icons/twitter.png" alt=""><span>Twitter</span></div>
+                   <div class="iconsAndText"><img src="/assets/icons/insta.png" alt=""><span>Instagram</span></div>
+                   <div class="iconsAndText"><img src="/assets/icons/youtube.png" alt=""><span>Youtube</span></div>
                </div>
            </div>
-           <div id="secondColumn">
+           <nav id="secondColumn">
                <span>About</span>
                <span>Map</span>
                <span>Zoos</span>
-               <span>Donate</span>
                <span>Contact us</span>
-               <span>Designed by</span>
-           </div>
+           </nav>
            <div id="lastColumn">
-               <span>Subscribe to our news</span>
+               <span id="Subscribe">Subscribe to our news</span>
                <div id="search">
-                   <input type="text" placeholder="Enter your email" value="Submit">
+                   <input type="text" placeholder="Enter your email" id="input_text">
+                   <button id="input_button">Submit</button>
                </div>
-               <div>
-                   <span>Designed by Alisa Samborskaya</span>
-                   <span>©RSSchool & ©Yem Digital 2021</span>
+               <div id="footer_designed_by">
+                    <div>
+                        <p  id="designed_by">Designed by Alisa Samborskaya</p>
+                        <p>&#169;RSSchool & &#169;Yem Digital 2021</p>
+                    </div>
                </div>
            </div>
        </div>
    </footer>
 </body>
 </html>
-<!-- <img src="/assets/images/Giant Panda.png" alt=""> -->
