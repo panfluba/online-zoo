@@ -452,10 +452,11 @@ h3{
 }
 
 .schemeArrow{
-    display: flex;
-    align-content: center;
+    /* display: flex; */
+    /* align-content: center; */
     height: 168px;
     padding: 0 15px;
+    margin-top: 60px;
 }
 
 #topic3 button{
