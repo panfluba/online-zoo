@@ -97,7 +97,7 @@ header{
 #topic1{
     display: flex;
     flex-direction: row;
-    background-image: url(/assets/images/GiantPanda.png);
+    background-image: url(../../assets/images/GiantPanda.png);
     height: 780px;
     background-size: 100%;
     object-fit: contain; /* заполнение картинкой блока */
