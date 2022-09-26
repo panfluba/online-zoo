@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Online Zoo</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -16,21 +16,26 @@
 <body>
    <header>
        <div id="header_inner_container">
-           <div class="logo_container">
-               <span class="logo">PetStory <br> online</span>
-               <img src="/assets/icons/bamboo.png" alt="bamboo">
-           </div>
+            <a href="index.html" style="width:82px;">
+                <div class="logo_container">
+
+                        <h1 class="logo">PetStory <br> online</h1>
+                        <img src="/assets/icons/bamboo.png" alt="bamboo">
+                </div>
+            </a>
            <nav>
                 <div class="navContainer">
-                    <span>About</span>
-                    <span>Map</span>
-                    <span>Zoos</span>
-                    <span>Donate</span>
-                    <span>Contact us</span>
+                    <a href="#" class="unclicable"><span>About</span></a>
+                    <a href="#" class="nav_clickable"><span>Map</span></a>
+                    <a href="#" class="nav_clickable"><span>Zoos</span></a>
+                    <a href="desktop_donate.html" class="nav_clickable"><span>Donate</span></a>
+                    <a href="#" class="nav_clickable"><span>Contact us</span></a>
                 </div>
            </nav>
-           <div>
-                <span id="designed">Designed by &#169;</span> <!-- &copy; -->
+           <div style="display: flex;justify-content: end;">
+                <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">
+                    <span id="designed" class="nav_clickable">Designed by &#169;</span> <!-- &copy; -->
+                </a>
            </div>
        </div>
    </header>
@@ -45,15 +50,17 @@
                         <span>ANIMAL<br>ONLINE</span>
                     </div>
                 </div>
-               <button class="orangeButton" id="watchOnline">WATCH ONLINE</button>
+                <a href="#">
+                    <button class="orangeButton" id="watchOnline">WATCH ONLINE</button>
+                </a>
            </div>
        </div>
 <!-- 2 -->
        <div class="main_content">
             <div id="anglePictures">
-                <img src="/assets/icons/flower_foto1.png" alt="" id="pic1">
-                <img src="/assets/icons/palm_foto.png" alt=""  id="pic2">
-                <img src="/assets/icons/strelitzia1.png" alt="" id="pic3" >
+                <img src="/assets/icons/flower_foto1.png" alt="flower" id="pic1">
+                <img src="/assets/icons/palm_foto.png" alt="palm"  id="pic2">
+                <img src="/assets/icons/strelitzia1.png" alt="strelitzia" id="pic3" >
             </div>
             <div id="topic2">
                 <div id="subtopic2_1">
@@ -75,79 +82,91 @@
                 <div id="subtopic2_2">
                     <div class="topic2_ellipce_buttoms">
                         <button id="buttonArrowLeft">
-                            <img src="/assets/icons/arrow.svg" alt="">
+                            <img src="/assets/icons/arrow.svg" alt="arrow">
                         </button>
                     </div>
                     <div id="album">
                         <div class="collage">
-                            <img src="/assets/images/panda.png" alt="" class="imgCollage">
+                            <div class="collage_img">
+                                <img src="/assets/images/panda.png" alt="panda" class="imgCollage">
+                            </div>
                             <div class="inCollage">
                                 <div class="inCollageText">
                                     <p class="animals">Giant pandas</p>
                                     <p>Native to Southwest China</p>
                                 </div>
                                 <div class="iconInCollage">
-                                    <img src="/assets/icons/bananabamboo.svg" alt="">
+                                    <img src="/assets/icons/bananabamboo.svg" alt="banana&bamboo">
                                 </div>
                             </div>
                         </div>
                         <div class="collage">
-                            <img src="/assets/images/eagle.png" alt="" class="imgCollage">
+                            <div class="collage_img">
+                                <img src="/assets/images/eagle.png" alt="eagle" class="imgCollage">
+                            </div>
                             <div class="inCollage">
                                 <div class="inCollageText">
                                     <p class="animals">Eagles</p>
                                     <p>Native to South America</p>
                                 </div>
                                 <div class="iconInCollage">
-                                    <img src="/assets/icons/meet-fish_icon.svg" alt="">
+                                    <img src="/assets/icons/meet-fish_icon.svg" alt="meet&fish">
                                 </div>
                              </div>
                         </div>
                         <div class="collage">
-                            <img src="/assets/images/gorilla.png" alt="" class="imgCollage">
+                            <div class="collage_img">
+                                <img src="/assets/images/gorilla.png" alt="gorilla" class="imgCollage">
+                            </div>
                             <div class="inCollage">
                                 <div class="inCollageText">
                                     <p class="animals">Gorillas</p>
                                     <p>Native to Congo</p>
                                 </div>
                                 <div class="iconInCollage">
-                                    <img src="/assets/icons/bananabamboo.svg" alt="">  
+                                    <img src="/assets/icons/bananabamboo.svg" alt="banana&bamboo">  
                                 </div>      
                              </div>
                         </div>
                         <div class="collage">
-                            <img src="/assets/images/sloth.png" alt="" class="imgCollage">
+                            <div class="collage_img">
+                                <img src="/assets/images/sloth.png" alt="sloth" class="imgCollage">
+                            </div>
                             <div class="inCollage">
                                 <div class="inCollageText">
                                     <p class="animals">Two-toed sloth</p>
                                     <p>Mesoamerica, South America</p>
                                 </div>
                                 <div class="iconInCollage">
-                                    <img src="/assets/icons/bananabamboo.svg" alt="">  
+                                    <img src="/assets/icons/bananabamboo.svg" alt="banana&bamboo">  
                                 </div>                              
                              </div>
                         </div>
                         <div class="collage">
-                            <img src="/assets/images/cheetah.png" alt="" class="imgCollage">
+                            <div class="collage_img">
+                                <img src="/assets/images/cheetah.png" alt="cheetah" class="imgCollage">
+                            </div>
                             <div class="inCollage">
                                 <div class="inCollageText">
                                     <p class="animals">Cheetahs</p>
                                     <p>Native to Africa</p>
                                 </div>
                                 <div class="iconInCollage">
-                                    <img src="/assets/icons/meet-fish_icon.svg" alt="">
+                                    <img src="/assets/icons/meet-fish_icon.svg" alt="meet&fish">
                                 </div>
                              </div>
                         </div>
                         <div class="collage">
-                            <img src="/assets/images/penguin.png" alt="" class="imgCollage">
+                            <div class="collage_img">
+                                <img src="/assets/images/penguin.png" alt="penguin" class="imgCollage">
+                            </div>
                             <div class="inCollage">
                                 <div class="inCollageText">
                                     <p class="animals">Penguins</p>
                                     <p>Native to Antarctica</p>
                                 </div>
                                 <div class="iconInCollage">
-                                    <img src="/assets/icons/meet-fish_icon.svg" alt="">  
+                                    <img src="/assets/icons/meet-fish_icon.svg" alt="meet&fish">  
                                 </div>
                                
                              </div>
@@ -155,7 +174,7 @@
                     </div>
                     <div class="topic2_ellipce_buttoms">
                         <button id="buttonArrowRigth">
-                            <img src="/assets/icons/arrow.svg" alt="" style="transform: rotate(-180deg);">
+                            <img src="/assets/icons/arrow.svg" alt="arrow" style="transform: rotate(-180deg);">
                         </button>
                     </div>
                 </div>
@@ -170,36 +189,37 @@
            <div id="whiteFrame">
                 <div id="t3p_margin_l">
                     <p class="orangeText">Pick and feed a friend</p>
-                    <p id="t3t1">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
-                    <p id="t3t2">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
-                    <p id="t3t3">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider<br> a gift to our Emergency Support Fund . </p>     
-                </div>
-              
-               <div id="scheme">
+                    <div class="textInScheme">
+                        <p id="t3t1">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+                        <p id="t3t2">During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that people around the world find joy in PetStory.</p>
+                        <p id="t3t3">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider<br> a gift to our <a href="desktop_donate.html">Emergency Support Fund</a> . </p>        
+                    </div>
+                </div>        
+                <div id="scheme">
                    <h3>How it works</h3>
                    <div id="partOfScheme">
                         <div class="scheme_column">
                             <div class="schemePicture">
-                                <img src="/assets/icons/sc1.svg" alt="">
+                                <img src="/assets/icons/sc1.svg" alt="pay_with_card">
                                
                             </div>
                             <span>Pay with card</span>
                         </div>
                         <div class="schemeArrow">
-                            <img src="/assets/icons/sc_arrow.svg" alt="">
+                            <img src="/assets/icons/sc_arrow.svg" alt="Payment">
                         </div>
                         <div class="scheme_column">
                             <div class="schemePicture">
-                                <img src="/assets/icons/sc3.png" alt="">
+                                <img src="/assets/icons/sc3.png" alt="monkey_with_banana">
                             </div>
                             <span>Payment goes to the zoo</span>
                         </div>
                         <div class="schemeArrow">
-                            <img src="/assets/icons/sc_arrow.svg" alt="">
+                            <img src="/assets/icons/sc_arrow.svg" alt="arrow">
                         </div>
                         <div class="scheme_column">
                             <div class="schemePicture">
-                                <img src="/assets/icons/sc3.svg" alt="">
+                                <img src="/assets/icons/sc3.svg" alt="arrow">
                             </div>
                             <span>Your favourite animal gets delicious dish</span>
                         </div>
@@ -212,15 +232,15 @@
 
        <div class="main_content">
            <div id="leav_foto">
-                <img src="/assets/icons/leav_foto.svg" alt="" id="pic4">
+                <img src="/assets/icons/leav_foto.svg" alt="leav" id="pic4">
            </div>
            <div id="topic4">
                 <h3>Testimonials</h3>
                 <div class="testi_container">
-                    <img src="/assets/images/testimonials1.svg" alt="">
-                    <img src="/assets/images/testimonials2.svg" alt="">
-                    <img src="/assets/images/testimonials3.svg" alt="">
-                    <img src="/assets/images/testimonials4.svg" alt="">
+                    <img src="/assets/images/testimonials1.svg" alt="testimonials1">
+                    <img src="/assets/images/testimonials2.svg" alt="testimonials2">
+                    <img src="/assets/images/testimonials3.svg" alt="testimonials3">
+                    <img src="/assets/images/testimonials4.svg" alt="testimonials4">
                 </div>
                 <div id="lineScrol">
                     <div id="greyScrol">
@@ -235,30 +255,32 @@
    <footer>
        <div id="footerThreeColumn">
            <div id="firstColumn">
-                <div class="logo_container">
-                    <span class="logo">PetStory <br> online</span>
-                    <img src="/assets/icons/bamboo.png" alt="bamboo">
-                </div>
-               <button class="notCircleAngleButton">donate for volunteers</button>
+                <a href="index.html">
+                    <div class="logo_container">
+                        <span class="logo">PetStory <br> online</span>
+                        <img src="/assets/icons/bamboo.png" alt="bamboo">
+                    </div>
+                </a>
+               <a href="desktop_donate.html"><button class="notCircleAngleButton"> donate for volunteers</button></a>
                <div id="socialLinks">
-                   <div class="iconsAndText"><img src="/assets/icons/facebook.png" alt=""><span>Facebook</span></div>
-                   <div class="iconsAndText"><img src="/assets/icons/twitter.png" alt=""><span>Twitter</span></div>
-                   <div class="iconsAndText"><img src="/assets/icons/insta.png" alt=""><span>Instagram</span></div>
-                   <div class="iconsAndText"><img src="/assets/icons/youtube.png" alt=""><span>Youtube</span></div>
+                   <a href="#"><div class="iconsAndText"><img src="/assets/icons/facebook.png" alt="facebook"><span>Facebook</span></div></a>
+                   <a href="#"><div class="iconsAndText"><img src="/assets/icons/twitter.png" alt="twitter"><span>Twitter</span></div></a>
+                   <a href="#"><div class="iconsAndText"><img src="/assets/icons/insta.png" alt="instagram"><span>Instagram</span></div></a>
+                   <a href="#"> <div class="iconsAndText"><img src="/assets/icons/youtube.png" alt="youtube"><span>Youtube</span></div></a>
                </div>
            </div>
            <nav id="secondColumn">
-               <span>About</span>
-               <span>Map</span>
-               <span>Zoos</span>
-               <span>Contact us</span>
+                <a href="#" class="unclicable"><span>About</span></a>
+                <a href="#" class="nav_clickable"><span>Map</span></a>
+                <a href="#" class="nav_clickable"><span>Zoos</span></a>
+                <a href="#" class="nav_clickable"><span>Contact us</span></a>
            </nav>
            <div id="lastColumn">
                <span id="Subscribe">Subscribe to our news</span>
-               <div id="search">
-                   <input type="text" placeholder="Enter your email" id="input_text">
-                   <button id="input_button">Submit</button>
-               </div>
+               <form id="search">
+                   <input type="email" placeholder="Enter your email" id="input_text">
+                   <button type="submit" id="input_button" form="search">Submit</button>
+               </form>
                <div id="footer_designed_by">
                     <div>
                         <p  id="designed_by">Designed by Alisa Samborskaya</p>
