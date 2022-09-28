@@ -74,19 +74,42 @@
                         <span id="amount">Amount</span>
                         <div id="slider">
                             <div id="lineSlider">
-                                <input type="radio" name="rb" >
-                                <input type="radio" name="rb" >
-                                <input type="radio" name="rb" >
-                                <input type="radio" name="rb" >
-                                <input type="radio" name="rb" >
-                                <input type="radio" name="rb" >
-                                <input type="radio" name="rb" >
-                                <input type="radio" name="rb" >
+                                <div class="pointers">
+                                    <input type="radio" name="rb" >
+                                    <div class="activeButtonOrangeText"><span>&#36;5000</span></div>
+                                </div>
+                                <div class="pointers">
+                                    <input type="radio" name="rb" >
+                                    <div class="activeButtonOrangeText"><span>&#36;2000</span></div>
+                                </div>
+                                <div class="pointers">
+                                    <input type="radio" name="rb" >
+                                    <div class="activeButtonOrangeText"><span>&#36;1000</span></div>
+                                </div>
+                                <div class="pointers">
+                                    <input type="radio" name="rb" >
+                                    <div class="activeButtonOrangeText"><span>&#36;500</span></div>
+                                </div>
+                                <div class="pointers">
+                                    <input type="radio" name="rb" >
+                                    <div class="activeButtonOrangeText"><span>&#36;250</span></div>
+                                </div>
+                                <div class="pointers">
+                                    <input type="radio" name="rb" >
+                                    <div class="activeButtonOrangeText"><span>&#36;100</span></div>
+                                </div>
+                                <div class="pointers">
+                                    <input type="radio" name="rb" >
+                                    <div class="activeButtonOrangeText"><span>&#36;50</span></div>
+                                </div>
+                                <div class="pointers">
+                                    <input type="radio" name="rb" >
+                                    <div class="activeButtonOrangeText"><span>&#36;25</span></div>
+                                </div>
                             </div>
                         </div>
-                        <div id="underSlider">
+                        <!-- <div id="underSlider">
                             <div id="money">
-                                <div><span>&#36;5000</span></div>
                                 <div><span>&#36;2000</span></div>
                                 <div><span>&#36;1000</span></div>
                                 <div><span>&#36;500</span></div>
@@ -95,7 +118,7 @@
                                 <div><span>&#36;50</span></div>
                                 <div><span>&#36;25</span></div>
                             </div>
-                        </div>
+                        </div> -->
                         <div id="center_another">
                             <form action="another">
                                 <div>
@@ -103,7 +126,7 @@
                                     <span id="dollar">&#36;</span>
                                 </div>
                                     <div id="two_radio">
-                                        <input type="radio" name="two" id="1">
+                                        <input type="radio" name="two" id="1" checked>
                                         <label for="1">Monthly</label>
                                         <input type="radio" name="two" id="2">
                                         <label for="2">Once</label>
@@ -133,10 +156,10 @@
                 </a>
                 <a href="desktop_donate.html"><button class="notCircleAngleButton">donate for volunteers</button></a>
                 <div id="socialLinks">
-                    <div class="iconsAndText"><img src="../../assets/icons/facebook.png" alt=""><span>Facebook</span></div>
-                    <div class="iconsAndText"><img src="../../assets/icons/twitter.png" alt=""><span>Twitter</span></div>
-                    <div class="iconsAndText"><img src="../../assets/icons/insta.png" alt=""><span>Instagram</span></div>
-                    <div class="iconsAndText"><img src="../../assets/icons/youtube.png" alt=""><span>Youtube</span></div>
+                    <a href="#"><div class="iconsAndText"><img src="../../assets/icons/facebook.png" alt="facebook"><span>Facebook</span></div></a>
+                    <a href="#"><div class="iconsAndText"><img src="../../assets/icons/twitter.png" alt="twitter"><span>Twitter</span></div></a>
+                    <a href="#"><div class="iconsAndText"><img src="../../assets/icons/insta.png" alt="instagram"><span>Instagram</span></div></a>
+                    <a href="#"> <div class="iconsAndText"><img src="../../assets/icons/youtube.png" alt="youtube"><span>Youtube</span></div></a>
                 </div>
             </div>
             <nav id="secondColumn">
@@ -147,10 +170,10 @@
             </nav>
             <div id="lastColumn">
                 <span id="Subscribe">Subscribe to our news</span>
-                <div id="search">
-                    <input type="text" placeholder="Enter your email" id="input_text">
-                    <button id="input_button">Submit</button>
-                </div>
+                <form id="search">
+                    <input type="email" placeholder="Enter your email" id="input_text">
+                    <button type="submit" id="input_button" form="search">Submit</button>
+                </form>
                 <div id="footer_designed_by">
                      <div>
                          <p  id="designed_by">Designed by Alisa Samborskaya</p>
