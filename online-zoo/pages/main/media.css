@@ -1,0 +1,296 @@
+@media(max-width:1400px) {
+
+  .main_content,
+  header,
+  footer {
+    overflow-x: hidden;
+    overflow: hidden;
+  }
+
+  /* ------------------- H E A D E R ---------------- */
+
+  #header_inner_container {
+    max-width: 940px;
+    width: 940px;
+    min-width: 641px;
+  }
+
+  .navContainer {
+    margin-left: 25.9px;
+  }
+
+  nav a {
+    margin: 0 24.3px;
+  }
+
+  /* ------------------- M A I N ---------------- */
+  #topic1 {
+    height: 584px;
+    width: 100%;
+    background-size: cover;
+    /* background-position-x: -100px; */
+  }
+
+  #orangeCircle {
+    height: 367px;
+    width: 367px;
+    margin-top: 57px;
+    position: static;
+
+  }
+
+  #watchYourFavAnimal {
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 75%;
+    left: 67px;
+    top: 112px;
+  }
+
+  #watchOnline {
+    position: absolute;
+    left: 111px;
+    top: 471px;
+  }
+
+  .elementsOfMain {
+    display: block;
+    position: relative;
+    width: 50%;
+    margin-left: 410px;
+    margin-top: 12px;
+  }
+
+  /* ------------------- T 1 ---------------- */
+  #pic1 {
+    opacity: 0;
+  }
+
+  #subtopic2_1 {
+    margin-top: 100px;
+    margin-bottom: 140px;
+  }
+
+  #subtopic2_1 img {
+    object-fit: cover;
+    width: 455px;
+    height: 408px;
+    margin-left: 17px;
+    margin-top: 10px;
+  }
+
+  .text {
+    margin-left: 3.1%;
+  }
+
+  #text2 {
+    margin-bottom: 35px;
+  }
+
+  #text3,
+  #text1 {
+    width: 448px;
+  }
+
+  .collage_img {
+    overflow: hidden;
+    width: 295px;
+    height: 295px;
+    border-radius: 5px;
+    z-index: 5;
+  }
+
+  .imgCollage {
+    width: 100%;
+  }
+
+  #subtopic2_2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    /* grid-template-rows: 1fr 1fr 1fr; */
+  }
+
+  #album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #buttonArrowRigth {
+    position: absolute;
+    left: 58.6%;
+    bottom: 36.8%;
+  }
+
+  #buttonArrowLeft {
+    position: absolute;
+    left: 35.3%;
+    bottom: 36.8%;
+  }
+
+  .collage {
+    margin: 0 14px 95px;
+    background-color: white;
+  }
+
+  .collage_img:hover:after {
+    transition: 0.2s;
+    z-index: 10;
+    margin: 0 auto;
+    width: 100%;
+    top: 0;
+    left: 0px;
+    height: 350px;
+    position: absolute;
+    content: '';
+    font-size: 50px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+  }
+
+  #topic2 {
+    max-height: 1745px;
+  }
+
+  #anglePictures {
+    height: 100%;
+  }
+
+  #pic3 {
+    height: 180px;
+  }
+
+  #pic2 {
+    content: url(../../assets/icons/palm_foto_small.png);
+    /* background-repeat: no-repeat; */
+  }
+
+  .choose_your_favorite {
+    position: relative;
+    margin: auto;
+    margin-bottom: 140px;
+  }
+
+  #topic3 {
+    padding-top: 29px;
+    padding-bottom: 49px;
+  }
+
+  #whiteFrame {
+    max-width: 940px;
+    height: 796px;
+  }
+
+  .orangeText {
+    text-align: center;
+    margin: 30px auto 20px;
+  }
+
+  .textInScheme {
+    margin-left: 49px;
+    margin-bottom: 10px;
+  }
+
+  #t3t1 {
+    margin-bottom: 21px;
+  }
+
+  #t3t2,
+  #t3t3 {
+    width: 80%;
+  }
+
+  #t3t3 {
+    margin-bottom: 30px;
+  }
+
+  #partOfScheme {
+    margin: 0 80px;
+  }
+
+  #topic3 button {
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 71px;
+  }
+
+  #topic4 {
+    width: 100%;
+    overflow-y: visible;
+  }
+
+  #topic4 h3 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  .testi_container {
+    padding: 0 30px;
+  }
+
+  #hidden_user {
+    display: none;
+  }
+
+  .testi_border {
+    width: 295px;
+  }
+
+  #user4 {
+    order: 2;
+  }
+
+  #user3 {
+    order: 3;
+  }
+
+  #greyScrol {
+    width: 385px;
+    margin-bottom: 50px;
+  }
+
+  #topic4 .notCircleAngleButton {
+    margin-bottom: 142px;
+    margin-left: 30px;
+  }
+
+  #pic4 {
+    bottom: -90px;
+    width: 200px;
+  }
+
+  #footerThreeColumn {
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  #secondColumn {
+    margin-bottom: 54px;
+    margin-left: -32px;
+    margin-right: -135px;
+  }
+
+  #lastColumn {
+    margin-left: -61px;
+  }
+
+  #search {
+    margin-right: 33px;
+  }
+
+}
+
+
+@media(max-width:1060px) {
+  #topic1 {
+    background-size: cover;
+    background-position-x: -100px;
+  }
+}
+
+@media(max-width:980px) {
+  
+}
+
+/* 950 */
