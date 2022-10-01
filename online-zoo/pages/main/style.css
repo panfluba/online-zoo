@@ -470,11 +470,12 @@ h3{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    height: 919px;
+    /* height: 919px; */
     justify-content: start;
     /* align-items: center; */
+    /* FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFff */
     color: #333B41;
-    width: 1160px;
+    width: 100%;
 }
 
 #topic4 h3{
@@ -515,6 +516,10 @@ h3{
     text-transform: uppercase;
     color: #FFF;
     border-style: none;
+}
+
+#topic4 .notCircleAngleButton{
+    margin-bottom: 177px;
 }
 
 #pic4{
@@ -668,7 +673,7 @@ a:link, a:visited{
 
 }
 
-.center div{
+.center > div{
     color: #fff;
 }
 
@@ -880,7 +885,11 @@ input[name="rb"]::before {
     visibility: visible;
   }
 
-  .pointer input[name="rb"]:checked::after + .activeButtonOrangeText{
+  .pointers .activeButtonOrangeText {
+    color: #333B41;
+  }
+
+  .pointers input[name="rb"]:checked + .activeButtonOrangeText {
     color:#E47209;
   }
 /* ----------------- A N I M A T E    A N I M A L S--------------------- */
@@ -1087,7 +1096,6 @@ input[type='number'] {
     font-size: 26px;
     line-height: 140%;
     /* margin: auto; */
-    color: #333B41;
 }
 
 #lineSlider{
@@ -1103,4 +1111,59 @@ input[type='number'] {
 
 #slider{
     margin-bottom: 100px;
+}
+
+/* ------------- */
+
+.testi_border{
+    position: relative;
+    width: 270px;
+    height: 393px;
+    background: linear-gradient(to right, rgba(243, 169, 248, 0.66), rgba(254, 189, 171, 0.74),rgba(224, 216, 240, 1)) border-box;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    padding: 0.1px;
+    z-index: 9;
+}
+
+.testi_white{
+    background: #F1F3F2;;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+}
+
+.commentator{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 13px;
+    padding-bottom: 7px;
+}
+
+.avatar{
+    padding-right: 10px;
+}
+
+.text_user{
+    color: #000;
+}
+
+.text_under_user{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #BDBDBD;
+}
+
+.comment{
+    position: absolute;
+    height: 306px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    padding: 0 13.5px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #767474;
 }
