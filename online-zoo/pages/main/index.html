@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <header class="cla clb clc">
+    <header>
         <div id="header_inner_container">
-            <a href="index.html" style="width:82px;">
+            <a href="index.html">
                 <div class="logo_container">
 
                     <h1 class="logo">PetStory <br> online</h1>
@@ -38,6 +38,9 @@
                 <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">
                     <span id="designed" class="nav_clickable">Designed by &#169;</span> <!-- &copy; -->
                 </a>
+            </div>
+            <div class="burger">
+                <div class="burger_element"></div>
             </div>
         </div>
     </header>
@@ -66,7 +69,10 @@
             </div>
             <div id="topic2">
                 <div id="subtopic2_1">
-                    <div>
+                    <a href="#">
+                        <button class="orangeButton" id="watchOnline">WATCH ONLINE</button>
+                    </a>
+                    <div class="hide_picture">
                         <img src="../../assets/images/bamboo-cap.png" alt="old_moment_with_moustache">
                     </div>
                     <div class="text">
@@ -145,7 +151,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="collage">
+                        <div class="collage  hidden_user">
                             <div class="collage_img">
                                 <img src="../../assets/images/cheetah.png" alt="cheetah" class="imgCollage">
                             </div>
@@ -159,7 +165,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="collage">
+                        <div class="collage  hidden_user">
                             <div class="collage_img">
                                 <img src="../../assets/images/penguin.png" alt="penguin" class="imgCollage">
                             </div>
@@ -377,7 +383,7 @@
                         <div id="orangeScrol"></div>
                     </div>
                 </div>
-                <div>
+                <div class="testi_button">
                     <button class="notCircleAngleButton">LEAVE FEEDBACK</button>
                 </div>
             </div>
@@ -389,13 +395,16 @@
     <footer>
         <div id="footerThreeColumn">
             <div id="firstColumn">
-                <a href="index.html">
-                    <div class="logo_container">
-                        <span class="logo">PetStory <br> online</span>
-                        <img src="../../assets/icons/bamboo.png" alt="bamboo">
-                    </div>
-                </a>
-                <a href="desktop_donate.html"><button class="notCircleAngleButton"> donate for volunteers</button></a>
+                <div class="logo_and_button">
+                    <a href="index.html">
+                        <div class="logo_container">
+                            <span class="logo">PetStory <br> online</span>
+                            <img src="../../assets/icons/bamboo.png" alt="bamboo">
+                        </div>
+                    </a>
+                    <a href="desktop_donate.html"><button class="notCircleAngleButton"> donate for volunteers</button>
+                    </a>
+                </div>
                 <div id="socialLinks">
                     <a href="#">
                         <div class="iconsAndText"><img src="../../assets/icons/facebook.png"
