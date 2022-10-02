@@ -850,6 +850,9 @@
   #designed_by {
     padding-bottom: 12px;
   }
+  .textInScheme {
+    margin: 0 auto;
+  }
 }
   
 /* 950 */
