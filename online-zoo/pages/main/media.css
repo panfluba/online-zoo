@@ -604,7 +604,7 @@
 
 /* ------------------ 3 2 0 ----------------------- */
 
-@media(max-width:600px) {
+@media(max-width:608px) {
   #header_inner_container {
     /* max-width: 940px; */
     width: 100%;
@@ -642,7 +642,7 @@
 
   #pic1 {
     height: 217px;
-    right: -40px;
+    right: -44px;
     top: 40px;
   }
   #subtopic2_1 a{
@@ -854,5 +854,247 @@
     margin: 0 auto;
   }
 }
+/* --------------------------------------------------------------------------------------  */
+@media(max-width:1500px) {
+  #donate_topic1{
+    height: 470px;
+  }
+  #donate_topic2{
+    height: 100%;
+  }
+  #donate_topic2 .center{
+    width: 94%;
+  }
+  #donate_topic2 h3 {
+    text-align: start;
+  }
+  #dtopic3{
+    margin: 0 30px;
+    width: 100%;
+  }
+  #dtop3_t1 {
+    margin-bottom: 30px;
+    width: 80%;
+  }
+  #dtop3_t3 {
+    margin-bottom: 40px;
+  }
+  #donate_scheme .orangeText {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #t3p_margin_l{
+    width: 100%;
+  }
+  #donate_scheme{
+    width: 100%;
+  }
+  #dt3t1{
+    text-align: center;
+  }
+  #slider {
+    margin: 0 65px 97px;
+    justify-content: center;
+    width: auto;
+  }
+  #lineSlider #hidden_1000px{
+    display: none;
+    /* opacity: 0; */
+  }
+  #lineSlider {
+    width: 96%;
+  }
+  #amount {
+    margin-left: 64px;
+  }
+  #dollar {
+    top: 20.5%;
+    left: 93.1%;
+  }
+  #donate_topic2 #whiteFrame {
+    height: 918px;
+    margin-bottom: 30px;
+  }
+  .secondColumnDonate{
+    margin-left: -18px !important;
+  }
+
+}
+
+  @media(max-width:980px) {
+    .secondColumnDonate{
+      margin-left: 0 !important ;
+  }
+  #donate_topic1{
+    min-height: 370px;
+    /* width: 100%; */
+    height: 100%;
+    background-size: 155%;
+  }
+  #dtop3_t1 {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .center {
+    margin-top: 28px;
+  }
+  #dtop3_t3{
+    font-size: 36px;
+  }
+  #dtop3_t2 {
+    margin-bottom: 28px;
+  }
+  #dtop3_t3 {
+    margin-bottom: 29px;
+  }
+  #donate_scheme .orangeText {
+    margin-top: 31px;
+    margin-right: 0px;
+    margin-bottom: 19px;
+    font-size: 48px;
+  }
+  #four {
+    margin-right: 55px;
+    margin-bottom: 15px;
+  }
+  #donate_partOfScheme {
+    margin: 0 auto 23px;
+  }
+  #slider {
+    margin: 0 0 97px;
+  }
+  #lineSlider #hidden_640px{
+    display: none;
+  }
+  #lineSlider {
+    width: 87%;
+  }
+  #amount {
+    margin-left: 12px;
+    margin-bottom: 7px;
+  }
+  #donate_partOfScheme {
+    margin-bottom: 34px;
+  }
+  /* .cross {
+    left: 198px;
+    top: 345px;
+  } */
+  #another {
+    height: 42px;
+    width: 178px;
+    margin-bottom: 33px;
+    font-size: 16px;
+  }
+  #dollar {
+    left: 90.1%;
+    top: 13.5%;
+  }
+  #donate_topic2 #whiteFrame {
+    margin-bottom: 48px;
+  }
+}
+
+  @media(max-width:600px) {
+    #donate_topic1 {
+      min-height: 222px;
+      width: 100%;
+      height: 100%;
+      background-size: 160%;
+    }
+    #dtop3_t1{
+      line-height: 124%;
+    }
+    #dtop3_t3 {
+      font-size: 24px;
+    }
+    #donate_scheme .orangeText {
+      margin-top: 19px;
+      margin-right: 0px;
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+    #donate_topic2 #whiteFrame {
+      width: 100%;
+      height: 918px;
+      margin-bottom: 30px;
+    }
+    #dt3t1 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    #donate_partOfScheme {
+      width: 100%;
+    }
+    #four {
+      font-size: 40px;
+      margin-right: 12px;
+      margin-bottom: 0;
+      margin-top: -36px;
+    }
+    .scheme_panda img{
+      width: 82%;
+      margin-left: 30px;
+      max-width: 181px;
+    }
+    .textUnderFour{
+      font-size: 9px;
+    }
+    .cross {
+      left: 35%;
+      top: 68px;
+    }
+    .cross img{
+      width: 50%;
+    }
+    #donate_partOfScheme {
+      margin-bottom: 0;
+    }
+    #amount {
+      margin-left: 0px;
+      margin-bottom: 9px;
+      margin-top: -54px;
+    }
+    #slider {
+      min-height: 13.5px;
+      height: 13.5px;
+    }
+    #lineSlider span{
+      font-size: 13px;
+    }
+    input[name="rb"]::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+  }
   
-/* 950 */
+  input[name="rb"]:checked::after{
+    content: '';
+
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 1px solid #FE9013;
+    outline: 1px solid #FE9013;
+    outline-offset: 4px;
+  }
+  #lineSlider span {
+    margin-top: 12px;
+  }
+  #slider {
+    margin-bottom: 48px;
+  }
+  #dollar {
+    top: 16%;
+    left: 90.1%;
+  }
+  #another {
+    margin-bottom: 24px;
+  }
+  #donate_topic2 #whiteFrame {
+    height: 590px;
+    margin-bottom: 21px;
+  }
+}

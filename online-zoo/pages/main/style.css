@@ -106,6 +106,15 @@ header{
     object-fit: contain; /* заполнение картинкой блока */
     background-repeat: no-repeat;
 }
+#donate_topic1{
+    display: flex;
+    flex-direction: row;
+    background-image: url(../../assets/images/GiantPanda.png);
+    height: 466px;
+    background-size: 100%;
+    object-fit: contain; /* заполнение картинкой блока */
+    background-repeat: no-repeat;
+}
 
 .elementsOfMain{
     font-weight: 700;
@@ -698,11 +707,11 @@ a:link, a:visited{
     justify-content: start ;
 }
 
-.cross{
+.cross {
     position: absolute;
-    left: 478px;
-    top: 340px;
-}
+    left: 171px;
+    top: 84px;
+  }
 
 #donate_scheme{
     display: flex;
@@ -713,11 +722,9 @@ a:link, a:visited{
 }
 
 #donate_partOfScheme{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     height: 200px;
+    position: relative;
     /* margin-bottom: 0px; */
 
 }
@@ -1066,8 +1073,8 @@ input[id="another"]{
 
 #dollar{
     position: absolute;
-    top: 71%;
-    left:60%;
+    top: 20%;
+    left: 92%;
     color: #929699;
 }
 
@@ -1165,4 +1172,9 @@ input[type='number'] {
 
 #subtopic2_1 a{
     display: none;
+}
+.textUnderFour{
+    font-size:16px;
+    text-align: center;
+     color: #333B41;
 }

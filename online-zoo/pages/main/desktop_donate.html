@@ -17,10 +17,11 @@
 <body>
     <header>
         <div id="header_inner_container">
-            <a href="index.html" style="width:82px;">
+            <a href="index.html">
                 <div class="logo_container">
-                        <h1 class="logo">PetStory <br> online</h1>
-                        <img src="../../assets/icons/bamboo.png" alt="bamboo">
+
+                    <h1 class="logo">PetStory <br> online</h1>
+                    <img src="../../assets/icons/bamboo.png" alt="bamboo">
                 </div>
             </a>
             <nav>
@@ -30,18 +31,20 @@
                     <a href="#" class="nav_clickable"><span>Zoos</span></a>
                     <a href="desktop_donate.html" class="unclicable"><span>Donate</span></a>
                     <a href="#" class="nav_clickable"><span>Contact us</span></a>
-                </div>
             </nav>
             <div style="display: flex;justify-content: end;">
                 <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">
                     <span id="designed" class="nav_clickable">Designed by &#169;</span> <!-- &copy; -->
                 </a>
             </div>
+            <div class="burger">
+                <div class="burger_element"></div>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="main_content" id="topic1" style="height: 466px;"></div>
+        <div class="main_content" id="donate_topic1"></div>
             
 
         <div class="main_content" id="donate_topic2">
@@ -62,7 +65,7 @@
                             <div class="scheme_column">
                                 <div id="numberOfPandas">
                                     <span id="four"> 4</span>
-                                    <span style="font-size:16px;text-align: center; color: #333B41;">Panda diet for the day.</span>
+                                    <span class="textUnderFour">Panda diet for the day.</span>
                                 </div>
                             </div>
                             <div class="cross">
@@ -75,15 +78,15 @@
                         <span id="amount">Amount</span>
                         <div id="slider">
                             <div id="lineSlider">
-                                <div class="pointers">
+                                <div class="pointers" id="hidden_1000px">
                                     <input type="radio" name="rb" >
                                     <div class="activeButtonOrangeText"><span>&#36;5000</span></div>
                                 </div>
-                                <div class="pointers">
+                                <div class="pointers" id="hidden_640px">
                                     <input type="radio" name="rb" >
                                     <div class="activeButtonOrangeText"><span>&#36;2000</span></div>
                                 </div>
-                                <div class="pointers">
+                                <div class="pointers" id="hidden_640px">
                                     <input type="radio" name="rb" >
                                     <div class="activeButtonOrangeText"><span>&#36;1000</span></div>
                                 </div>
@@ -111,7 +114,7 @@
                         </div>
                         <div id="center_another">
                             <form action="another">
-                                <div>
+                                <div style="position: relative;">
                                     <input type="number" name="" id="another" placeholder="Another amount">  
                                     <span id="dollar">&#36;</span>
                                 </div>
@@ -138,21 +141,36 @@
     <footer>
         <div id="footerThreeColumn">
             <div id="firstColumn">
-                <a href="index.html">
-                    <div class="logo_container">
-                        <span class="logo">PetStory <br> online</span>
-                        <img src="../../assets/icons/bamboo.png" alt="bamboo">
-                    </div>
-                </a>
-                <a href="desktop_donate.html"><button class="notCircleAngleButton">donate for volunteers</button></a>
+                <div class="logo_and_button">
+                    <a href="index.html">
+                        <div class="logo_container">
+                            <span class="logo">PetStory <br> online</span>
+                            <img src="../../assets/icons/bamboo.png" alt="bamboo">
+                        </div>
+                    </a>
+                    <a href="desktop_donate.html"><button class="notCircleAngleButton"> donate for volunteers</button>
+                    </a>
+                </div>
                 <div id="socialLinks">
-                    <a href="#"><div class="iconsAndText"><img src="../../assets/icons/facebook.png" alt="facebook"><span>Facebook</span></div></a>
-                    <a href="#"><div class="iconsAndText"><img src="../../assets/icons/twitter.png" alt="twitter"><span>Twitter</span></div></a>
-                    <a href="#"><div class="iconsAndText"><img src="../../assets/icons/insta.png" alt="instagram"><span>Instagram</span></div></a>
-                    <a href="#"> <div class="iconsAndText"><img src="../../assets/icons/youtube.png" alt="youtube"><span>Youtube</span></div></a>
+                    <a href="#">
+                        <div class="iconsAndText"><img src="../../assets/icons/facebook.png"
+                                alt="facebook"><span>Facebook</span></div>
+                    </a>
+                    <a href="#">
+                        <div class="iconsAndText"><img src="../../assets/icons/twitter.png"
+                                alt="twitter"><span>Twitter</span></div>
+                    </a>
+                    <a href="#">
+                        <div class="iconsAndText"><img src="../../assets/icons/insta.png"
+                                alt="instagram"><span>Instagram</span></div>
+                    </a>
+                    <a href="#">
+                        <div class="iconsAndText"><img src="../../assets/icons/youtube.png"
+                                alt="youtube"><span>Youtube</span></div>
+                    </a>
                 </div>
             </div>
-            <nav id="secondColumn">
+            <nav id="secondColumn" class="secondColumnDonate">
                  <a href="index.html" class="nav_clickable"><span>About</span></a>
                  <a href="#" class="nav_clickable"><span>Map</span></a>
                  <a href="#" class="nav_clickable"><span>Zoos</span></a>
