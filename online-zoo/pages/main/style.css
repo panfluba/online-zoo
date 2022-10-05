@@ -459,7 +459,7 @@ h3{
 }
 
 .scheme_column span{
-    /* margin-top: 30px; */
+    margin-top: -10px;
     line-height: 140%;
 }
 
@@ -1003,10 +1003,29 @@ form[action="another"]{
 #two_radio{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: start;
     font-size: 16px;
     color: #333B41;
 }
+
+#two_radio {
+    justify-content: start;
+  }
+  input[id ='1']{
+    margin-left: 36px;
+    margin-right: 20px;
+  }
+  label[for="1"]{
+    /* margin-left: 20px; */
+    margin-right: 57px;
+  }
+  label[for="2"]{
+    margin-left: 20px;
+  }
+  input[id="another"] {
+    padding-left: 5px;
+  }
 
 input[name='two']::before {
     content: '';
