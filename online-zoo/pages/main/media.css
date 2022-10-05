@@ -173,7 +173,7 @@
     padding-bottom: 49px;
   }
 
-  #whiteFrame {
+  #topic3 #whiteFrame {
     max-width: 940px;
     height: 796px;
   }
@@ -861,6 +861,10 @@
 @media(max-width:1500px) {
   #donate_topic1{
     height: 470px;
+  }
+  #whiteFrame {
+    max-width: 100%;
+    height: 796px;
   }
   #donate_topic2{
     height: 100%;
