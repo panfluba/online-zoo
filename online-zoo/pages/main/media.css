@@ -1270,7 +1270,7 @@
     flex-direction: column;
   }
   #button_burger_active.active .header_inner_container .logo_container img{
-    content: url(../../assets/icons/orange_bamboo.png);
+    content: url(../../assets/icons/orange_bamboo.svg);
     height: 16px;
     left: 7px;
     top: 22px;
