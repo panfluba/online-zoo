@@ -9,14 +9,17 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="media.css">
 
+<script src="script.js"></script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 </style>
 </head>
 
 <body>
-    <header>
-        <div id="header_inner_container">
+    <header id="button_burger_active">
+
+        <div class="header_inner_container">
             <a href="index.html">
                 <div class="logo_container">
 
@@ -29,18 +32,20 @@
                     <a href="index.html" class="nav_clickable"><span>About</span></a>
                     <a href="#" class="nav_clickable"><span>Map</span></a>
                     <a href="#" class="nav_clickable"><span>Zoos</span></a>
-                    <a href="desktop_donate.html" class="unclicable"><span>Donate</span></a>
+                    <a href="#" class="unclicable"><span>Donate</span></a>
                     <a href="#" class="nav_clickable"><span>Contact us</span></a>
+                </div>
             </nav>
-            <div style="display: flex;justify-content: end;">
+            <div class="div_designed">
                 <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">
                     <span id="designed" class="nav_clickable">Designed by &#169;</span> <!-- &copy; -->
                 </a>
             </div>
-            <div class="burger">
+            <div class="burger">  <!-- class="burger"  -->
                 <div class="burger_element"></div>
             </div>
         </div>
+        <div class="dark" onclick="catalog.classList.remove('active')"></div>
     </header>
 
     <main>

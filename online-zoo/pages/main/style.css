@@ -31,11 +31,11 @@ header{
     height: 80px;
 
 }
-.burger, #button_burger_active{
+.burger{
     display: none;
 }
 
- #header_inner_container{
+ .header_inner_container{
     color: #fff;
     display: grid;
     grid-template-columns: 0.5fr 3.55fr 1fr;
@@ -1207,5 +1207,10 @@ input[type='number'] {
 }
 .donate_scheme_column{
     margin-right: 0;
+}
+
+.div_designed{
+    display: flex;
+    justify-content: end;
 }
 

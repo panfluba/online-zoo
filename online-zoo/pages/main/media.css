@@ -9,7 +9,7 @@
 
   /* ------------------- H E A D E R ---------------- */
 
-  #header_inner_container {
+  .header_inner_container {
     max-width: 940px;
     width: 940px;
     min-width: 641px;
@@ -297,7 +297,7 @@
   nav, #designed{
     display: none;
   }
-  #header_inner_container, header {
+  .header_inner_container, header {
     height: 34px;
   }
 
@@ -315,7 +315,11 @@
     top: 13px;
     height: 13px;
   }
-  .burger, #button_burger_active{
+  #button_burger_active{
+    display: flex;
+    align-items: center;
+  }
+  .burger{
     display: flex;
     justify-content: end;
     margin-right: 20px;
@@ -619,7 +623,7 @@
 /* ------------------ 3 2 0 ----------------------- */
 
 @media(max-width:625px) {
-  #header_inner_container {
+  .header_inner_container {
     /* max-width: 940px; */
     width: 100%;
     min-width: auto;
@@ -628,7 +632,7 @@
   .burger, #button_burger_active{
     margin-right: 10px;
   }
-  #header_inner_container a{
+  .header_inner_container a{
     width: 100%;
   }
   header .logo_container {
@@ -1207,3 +1211,109 @@
     margin-left: -8px;
   }
 }
+
+/* week3 */
+@media(max-width:980px) {
+  #button_burger_active:active .burger_element, #button_burger_active.active .burger_element {background-color:transparent;}
+  #button_burger_active:active .burger_element::before, #button_burger_active.active .burger_element::before{transform:translateY(4px) rotate(45deg); background-color: #FE9013;}
+  #button_burger_active:active .burger_element::after, #button_burger_active.active .burger_element::after{transform:translateY(-4px) rotate(-45deg); background-color: #FE9013;}
+  #button_burger_active.active{
+    height: 329px;
+    transition: height .3s ease-in-out;
+    align-items: start;
+    display: flex;
+    background-color: #fff ;
+    padding: 0;
+  }
+  #button_burger_active.active .header_inner_container{
+    z-index: 100;
+    background-color: #fff ;
+    height: 329px;
+    margin-top: 0;
+  }
+  #button_burger_active.active  .header_inner_container{
+    grid-template-columns: 1fr 220px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "logo crossic"
+    "navi navi"
+    "des des";
+    z-index: 21;
+  }
+  #button_burger_active.active .navContainer{
+    grid-area: navi;
+    margin-left: 0;
+  }
+  #button_burger_active.active .logo_container{
+    grid-area: logo;
+    z-index: 21;
+  }
+  #button_burger_active.active .burger{
+    grid-area: crossic;
+  }
+
+  #button_burger_active.active .div_designed{
+    display: grid;
+    grid-area: des;
+    justify-content: start;
+    margin-left: 10px;
+    z-index: 21;
+    margin-top:-40px;
+  }
+  #button_burger_active.active #designed{
+    display: block;
+  }
+
+
+  #button_burger_active.active nav, .navContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  #button_burger_active.active .header_inner_container .logo_container img{
+    content: url(../../assets/icons/orange_bamboo.png);
+    height: 16px;
+    left: 7px;
+    top: 22px;
+  }
+  #button_burger_active.active .header_inner_container .logo_container{
+    color: #FE9013;
+    margin-top: 7px;
+    margin-left: 10px;
+    border: 0.950725px solid #FE9013;
+    width: 67px;
+    margin-bottom: 32px;
+  }
+  #button_burger_active.active .logo_container h1{
+  font-weight: 400;
+  font-size: 15.2116px;
+  line-height: 120%;
+  margin-top: 5px;
+}
+
+#button_burger_active.active nav a {
+  margin: 0 10px 18px;
+}
+  #button_burger_active.active .header_inner_container a:visited{
+    color: #333B41;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  } 
+
+  .dark{
+    display: none;
+    z-index: 1;
+  }
+  #button_burger_active.active .dark{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left:0;
+    /* z-index: 10; */
+
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+} 
