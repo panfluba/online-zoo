@@ -106,7 +106,7 @@
     grid-template-rows: repeat(3, 200px);
   }
 
-  #album {
+  .album {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -421,7 +421,7 @@
   #text3, #text1 {
     width: 485px;
   }
-  #album {
+  .album {
     grid-template-columns: repeat(2, 1fr);
   }
   .hidden_user{
@@ -701,7 +701,7 @@
   #text3, #text1 {
     width: 95%;
   }
-  #album {
+  .album {
     grid-template-columns: 1fr;
   }
   .topic2_ellipce_buttoms {
@@ -1051,7 +1051,7 @@
   .input_text_form{
     margin: 0 auto;
   }
-  #center_another form {
+  #center_another .another {
     width: 200px;
   }
 }
@@ -1299,6 +1299,9 @@
     font-size: 16px;
     line-height: 140%;
   } 
+  #button_burger_active.active .header_inner_container a:link{
+    color: #333B41;
+  }
 
   .dark{
     display: none;

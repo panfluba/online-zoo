@@ -255,7 +255,7 @@ header{
     /* align-items: end; */
 }
 
-#album{
+.album{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -983,7 +983,7 @@ input[name="rb"]::before {
     border: #D31414 1px solid;
     color: #D31414;
 }
-form[action="another"]{
+.another{ /* form[action="another"] */
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -1070,7 +1070,7 @@ input[name='two']::before {
     height:964px ;
 }
 
-#center_another form{
+#center_another .another{
     margin-bottom: 30px;
 }
 

@@ -12,8 +12,8 @@
 <script src="script.js"></script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-</style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+    </style>
 </head>
 
 <body>
@@ -47,11 +47,11 @@
         </div>
         <div class="dark" onclick="catalog.classList.remove('active')"></div>
     </header>
-
+    
     <main>
         <div class="main_content" id="donate_topic1"></div>
-            
-
+        
+        
         <div class="main_content" id="donate_topic2">
             <div class="center">
                 <div id="dtopi3">
@@ -77,68 +77,69 @@
                                 <img src="../../assets/icons/cross.svg" alt="">
                             </div>
                             <div class="scheme_panda">
-                                    <img src="../../assets/icons/panda_widget1.svg" alt="" style="margin-bottom: 48px;">
+                                <img src="../../assets/icons/panda_widget1.svg" alt="" style="margin-bottom: 48px;">
                             </div>
                         </div>
                         <span id="amount">Amount</span>
-                        <div id="slider">
-                            <div id="lineSlider">
-                                <div class="pointers" id="hidden_1000px">
-                                    <input type="radio" name="rb" >
-                                    <div class="activeButtonOrangeText"><span>&#36;5000</span></div>
-                                </div>
-                                <div class="pointers" id="hidden_640px">
-                                    <input type="radio" name="rb" >
-                                    <div class="activeButtonOrangeText"><span>&#36;2000</span></div>
-                                </div>
-                                <div class="pointers" id="hidden_640px">
-                                    <input type="radio" name="rb" >
-                                    <div class="activeButtonOrangeText"><span>&#36;1000</span></div>
-                                </div>
-                                <div class="pointers">
-                                    <input type="radio" name="rb" >
-                                    <div class="activeButtonOrangeText" id="money500"><span>&#36;500</span></div>
-                                </div>
-                                <div class="pointers">
-                                    <input type="radio" name="rb" >
-                                    <div class="activeButtonOrangeText" id="money500"><span>&#36;250</span></div>
-                                </div>
-                                <div class="pointers">
-                                    <input type="radio" name="rb" checked >
-                                    <div class="activeButtonOrangeText" id="money500"><span>&#36;100</span></div>
-                                </div>
-                                <div class="pointers">
-                                    <input type="radio" name="rb" >
-                                    <div class="activeButtonOrangeText" id="money50"><span>&#36;50</span></div>
-                                </div>
-                                <div class="pointers">
-                                    <input type="radio" name="rb" >
-                                    <div class="activeButtonOrangeText" id="money50"><span>&#36;25</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="center_another">
-                            <form action="another">
-                                <div style="position: relative;" class="input_text_form" >
-                                    <input type="number" name="" id="another" placeholder="Another amount" maxlength="2">  
-                                    <span id="dollar">&#36;</span>
-                                </div>
-                                    <div id="two_radio">
-                                        <input type="radio" name="two" id="1">
-                                        <label for="1">Monthly</label>
-                                        <input type="radio" name="two" id="2" checked>
-                                        <label for="2">Once</label>
+                        <form action="donate_form" id="form_donate">
+                            <div id="slider">
+                                <div id="lineSlider">
+                                    <div class="pointers" id="hidden_1000px">
+                                        <input type="radio" name="rb" data-placeholder="5000" value="5000" class="radioBut" onClick="changeNumber(5000)">
+                                        <div class="activeButtonOrangeText"><span>&#36;5000</span></div>
                                     </div>
-                            </form>
-                            <div>
-                                <button class="orangeButton">FEED A FRIEND NOW</button>
+                                    <div class="pointers" id="hidden_640px">
+                                        <input type="radio" name="rb" data-placeholder="2000" value="2000" class="radioBut" onClick="changeNumber(2000)">
+                                        <div class="activeButtonOrangeText"><span>&#36;2000</span></div>
+                                    </div>
+                                    <div class="pointers" id="hidden_640px">
+                                        <input type="radio" name="rb" data-placeholder="1000" value="1000" class="radioBut" onClick="changeNumber(1000)">
+                                        <div class="activeButtonOrangeText"><span>&#36;1000</span></div>
+                                    </div>
+                                    <div class="pointers">
+                                        <input type="radio" name="rb" data-placeholder="500" value="500" class="radioBut" onClick="changeNumber(500)">
+                                        <div class="activeButtonOrangeText" id="money500"><span>&#36;500</span></div>
+                                    </div>
+                                    <div class="pointers">
+                                        <input type="radio" name="rb" data-placeholder="250" value="250" class="radioBut" onClick="changeNumber(250)">
+                                        <div class="activeButtonOrangeText" id="money500"><span>&#36;250</span></div>
+                                    </div>
+                                    <div class="pointers">
+                                        <input type="radio" name="rb"data-placeholder="100" value="100" class="radioBut" onClick="changeNumber(100)" checked>
+                                        <div class="activeButtonOrangeText" id="money500"><span>&#36;100</span></div>
+                                    </div>
+                                    <div class="pointers">
+                                        <input type="radio" name="rb" data-placeholder="50" value="50" class="radioBut" onClick="changeNumber(50)">
+                                        <div class="activeButtonOrangeText" id="money50"><span>&#36;50</span></div>
+                                    </div>
+                                    <div class="pointers">
+                                        <input type="radio" name="rb" data-placeholder="25" value="25" class="radioBut" onClick="changeNumber(25)">
+                                        <div class="activeButtonOrangeText" id="money50"><span>&#36;25</span></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <span>Share with your friends on social networks</span>
-                            </div>
-                        </div>
+                            <div id="center_another">
+                                <div class="another">
+                                    <div style="position: relative;" class="input_text_form" >
+                                        <input type="number" id="another" placeholder="Another amount" maxlength="2" class="hey">  
+                                        <span id="dollar">&#36;</span>
+                                    </div>
+                                        <div id="two_radio">
+                                            <input type="radio" name="two" id="1">
+                                            <label for="1">Monthly</label>
+                                            <input type="radio" name="two" id="2" checked>
+                                            <label for="2">Once</label>
+                                        </div>
+                                </div>
+                                <div>
+                                    <button class="orangeButton">FEED A FRIEND NOW</button>
+                                </div>     
+                                <div>
+                                    <span>Share with your friends on social networks</span>
+                                </div>
+                            </div> 
+                        </form>
 
-                    </div> 
                 </div>
             </div>
         </div>
@@ -159,18 +160,18 @@
                 <div id="socialLinks">
                     <a href="#">
                         <div class="iconsAndText"><img src="../../assets/icons/facebook.png"
-                                alt="facebook"><span>Facebook</span></div>
-                    </a>
-                    <a href="#">
+                            alt="facebook"><span>Facebook</span></div>
+                        </a>
+                        <a href="#">
                         <div class="iconsAndText"><img src="../../assets/icons/twitter.png"
                                 alt="twitter"><span>Twitter</span></div>
-                    </a>
-                    <a href="#">
-                        <div class="iconsAndText"><img src="../../assets/icons/insta.png"
+                            </a>
+                            <a href="#">
+                                <div class="iconsAndText"><img src="../../assets/icons/insta.png"
                                 alt="instagram"><span>Instagram</span></div>
-                    </a>
-                    <a href="#">
-                        <div class="iconsAndText"><img src="../../assets/icons/youtube.png"
+                            </a>
+                            <a href="#">
+                                <div class="iconsAndText"><img src="../../assets/icons/youtube.png"
                                 alt="youtube"><span>Youtube</span></div>
                     </a>
                 </div>
@@ -196,5 +197,6 @@
             </div>
         </div>
     </footer>
+    <script src="script2.js"></script>
  </body>
  </html>
