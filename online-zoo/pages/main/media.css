@@ -222,7 +222,9 @@
   }
 
   .testi_container {
-    padding: 0 30px;
+    justify-content: center;
+    width: 85%;
+    margin:0 auto;
   }
 
   #hidden_user {
@@ -230,7 +232,8 @@
   }
 
   .testi_border {
-    width: 295px;
+    /* width: 295px; */
+    margin: 0 10px;
   }
 
   #user4 {
@@ -427,6 +430,9 @@
   .hidden_user{
     display: none;
   }
+  .hidden_users{
+    display: none;
+  }
   #buttonArrowRigth {
     position: absolute;
     right: 37.8%;
@@ -551,7 +557,7 @@
   .comment {
     height: 35px;
   }
-  #lineScrol{
+  .lineScrol{
     display: none;
   }
   .testi_button{
@@ -618,6 +624,11 @@
   #socialLinks img {
     margin-bottom: 10px;
   }
+  .all_testi_container {
+    flex-direction: column;
+    max-width: 980px;
+    width: auto;
+    position: static;
 }
 
 /* ------------------ 3 2 0 ----------------------- */
@@ -782,6 +793,8 @@
   }
   .testi_container {
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
   }
   .commentator {
     margin-left: 0px;
