@@ -297,6 +297,7 @@
   header{
     position:fixed;
   }
+
   nav, #designed{
     display: none;
   }
@@ -555,7 +556,7 @@
     padding-bottom: 8px;
   }
   .comment {
-    height: 35px;
+    height: 15px;
   }
   .lineScrol{
     display: none;
@@ -629,6 +630,7 @@
     max-width: 980px;
     width: auto;
     position: static;
+}
 }
 
 /* ------------------ 3 2 0 ----------------------- */
@@ -1203,6 +1205,13 @@
     padding-left: 5px;
   }
 }
+
+@media(max-width:1001px) and (min-width: 999px) {
+.testi_border {
+  margin: 0 17px !important;
+  } 
+}
+
 
 @media(max-width:1500px) {
   .pointers span {
